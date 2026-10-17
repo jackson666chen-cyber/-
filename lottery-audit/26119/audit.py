@@ -1,5 +1,6 @@
 """DLT 26119 exact 10-ticket payoff audit. Requires numpy. Python 3.10+."""
 import itertools, math, json, collections
+from pathlib import Path
 import numpy as np
 A="""03 04 10 14 26|09 12
 03 09 10 21 22|01 05
@@ -63,4 +64,7 @@ prizes=[int(high[tier[len(outcome[0]&set(f)),len(outcome[1]&set(b))]]) for f,b i
 assert sum(prizes)==89 and sorted(prizes)==[0,0,7,7,7,7,7,18,18,18]
 assert len({round(x['expected_fixed_low'],10) for x in result.values()})==1
 assert len({round(x['expected_fixed_high'],10) for x in result.values()})==1
-print(json.dumps({'total_outcomes':N,'photo_26110_payout':sum(prizes),'portfolios':result},ensure_ascii=False,indent=2))
+report={'total_outcomes':N,'photo_26110_payout':sum(prizes),'portfolios':result}
+output_path=Path(__file__).with_name('dlt_26119_audit_results.json')
+output_path.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(json.dumps(report,ensure_ascii=False,indent=2))
