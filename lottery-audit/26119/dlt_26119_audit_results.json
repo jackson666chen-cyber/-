@@ -1,0 +1,67 @@
+{
+  "audit_source": "Claude spreadsheet supplied by user; independent enumeration matching audit.py",
+  "total_outcomes": 21425712,
+  "photo_26110_payout": 89,
+  "portfolios": {
+    "V5": {
+      "numerators": {
+        "any": 11975666,
+        "fixed_2plus": 2211007,
+        "fixed_3plus": 104456,
+        "low_ge_20": 407290,
+        "high_ge_20": 499110,
+        "high_ge_89": 142932
+      },
+      "probabilities": {
+        "any": 0.5589389981532469,
+        "fixed_2plus": 0.10319409688695526,
+        "fixed_3plus": 0.004875263888546621,
+        "low_ge_20": 0.019009403281440542,
+        "high_ge_20": 0.02329490847258658,
+        "high_ge_89": 0.006671050184936678
+      },
+      "expected_fixed_low": 5.549596204784233,
+      "expected_fixed_high": 7.452558402726593
+    },
+    "V6": {
+      "numerators": {
+        "any": 7547832,
+        "fixed_2plus": 2350460,
+        "fixed_3plus": 1913365,
+        "low_ge_20": 1505980,
+        "high_ge_20": 2001380,
+        "high_ge_89": 101574
+      },
+      "probabilities": {
+        "any": 0.35227916813219556,
+        "fixed_2plus": 0.10970277207123852,
+        "fixed_3plus": 0.08930228316333198,
+        "low_ge_20": 0.07028844595689515,
+        "high_ge_20": 0.09341019799015314,
+        "high_ge_89": 0.004740752606027748
+      },
+      "expected_fixed_low": 5.549596204784233,
+      "expected_fixed_high": 7.452558402726593
+    },
+    "dantuo": {
+      "numerators": {
+        "any": 2731848,
+        "fixed_2plus": 2731848,
+        "fixed_3plus": 2731848,
+        "low_ge_20": 2074128,
+        "high_ge_20": 2731848,
+        "high_ge_89": 309246
+      },
+      "probabilities": {
+        "any": 0.12750325403421833,
+        "fixed_2plus": 0.12750325403421833,
+        "fixed_3plus": 0.12750325403421833,
+        "low_ge_20": 0.09680555773362398,
+        "high_ge_20": 0.12750325403421833,
+        "high_ge_89": 0.014433405993695799
+      },
+      "expected_fixed_low": 5.549596204784233,
+      "expected_fixed_high": 7.452558402726593
+    }
+  }
+}
